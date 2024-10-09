@@ -1,0 +1,321 @@
+body {
+  background-color: #eaf8fc;
+  font-family: handjet;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* HEADER STYLE */
+.header {
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content: space-between;
+  width: 100%;
+  height: 15%;
+  margin-top: 0.5%;
+}
+
+.ticker {
+  font-family: fruktur;
+  font-size: 1.5em;
+  margin-top: -0.5%;
+  margin-left: 50px;
+}
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 15%;
+  margin-top: 0.5%;
+  margin-left: 30px;
+}
+.birdshit {
+  width: 58px;
+}
+
+.twitter {
+  margin-top: -17%;
+  width: 65px;
+}
+.citation {
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  margin-right: 50px;
+}
+/* LANDING PAGE STYLE */
+
+.Title {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 7em;
+  margin-top: -8%;
+  text-align: center;
+}
+.Title h2 {
+  color: #000;
+  font-family: Fruktur;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.Title h1 {
+  font-family: fruktur;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: linear-gradient(90deg, #2082fa 0%, #372674 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: -25%;
+}
+
+/* BACKGROUND STYLE */
+.background {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -13%;
+  margin-bottom: 0;
+}
+.background img {
+  width: 165%;
+  margin-left: 0%;
+  margin-top: -16%;
+}
+
+.background h3 {
+  margin-top: 90%;
+  margin-left: -30%;
+}
+
+/* LOREPAGE STYLE */
+
+.LorePage {
+  background: linear-gradient(180deg, #151617 0%, #192240 100%);
+  width: 100%;
+  height: 1203px;
+  flex-shrink: 0;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  margin-top: -4px;
+}
+
+.LoreTitle {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.LoreTitle h2 {
+  font-family: Fruktur;
+  font-size: 4.8em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.LoreTitle h3 {
+  font-family: Handjet;
+  font-size: 2em;
+  font-style: normal;
+  font-weight: 400;
+  margin-top: -40%;
+}
+
+/* GALLERY STYLE */
+.carousel {
+  margin: 0 auto;
+  padding: 20px 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  height: 550px;
+  &:hover .group {
+    animation-play-state: paused;
+  }
+}
+
+.card {
+  width: 400px;
+  height: 500px;
+  color: black;
+  border-radius: 24px;
+  box-shadow: rgba(0, 0, 0, 10%) 5px 5px 20px 0;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 150px;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
+  padding: 0;
+
+  &:nth-child(1) {
+    background: #d9d9d9;
+  }
+
+  &:nth-child(2) {
+    background: #d9d9d9;
+  }
+
+  &:nth-child(3) {
+    background: #d9d9d9;
+  }
+  &:nth-child(4) {
+    background: #d9d9d9;
+  }
+  &:nth-child(5) {
+    background: #d9d9d9;
+  }
+  &:nth-child(6) {
+    background: #d9d9d9;
+  }
+}
+.group {
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
+  will-change: transform;
+  animation: scrolling 20s linear infinite;
+}
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.txt {
+  width: 400px;
+  border-radius: 0 0 20px 20px;
+  height: 100px;
+  background-color: #ffffff;
+  margin: 0;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.apetxt {
+    align-self: center;
+    font-size: 2.3em;
+}
+
+/* BOTTOM STYLE */
+
+.bottom {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    font-size: 1.7em;
+}
+
+@media only screen and (max-width: 1640px) {
+    .Title {
+        font-size: 5em;
+      }
+      .background {
+        display: flex;
+        justify-content: space-around;
+        margin-top: -13%;
+        margin-bottom: 0;
+      }
+      .background img {
+        width: 135%;
+        margin-left: 10%;
+        margin-top: -13%;
+      }
+      
+      .background h3 {
+        margin-top: 70%;
+        margin-left: -15%;
+      }
+      
+
+}
+@media only screen and (max-width: 1440px) {
+    .Title {
+        font-size: 6.15em;
+      }
+
+}
+
+@media screen and (max-width: 1280px) {
+    .Title {
+        font-size: 4.15em;
+      }
+      
+      .background h3 {
+        margin-left: 5%;
+      }
+    
+}
+
+@media screen and (max-width:414px){
+    
+.ticker {
+    display: none;
+  }
+
+  .citation1 {
+    display: none;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 15%;
+    margin-top: 18%;
+  }
+  .buttons {
+    gap: 15px;
+  }
+  .Title {
+    font-size: 3em;
+  }
+  .background {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: -50%;
+    margin-bottom: 0;
+    text-align: center;
+
+  }
+  .background img {
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 20%;
+  }
+  .background .citation{
+    width: 100%;
+  }
+  
+  .background h3 {
+    margin-top: 55%;
+    margin-left: 0%;
+    font-size: 1em;
+  }
+
+  .apetxt {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  
+}
+
+@media screen and (max-width: 330px) {
+    .Title {
+        font-size: 2em;
+    }    
+}
+
